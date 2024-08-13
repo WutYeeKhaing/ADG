@@ -144,7 +144,7 @@
   /* Small screens */
   @media (max-width: 768px) {
     .swiper-slide {
-      width: calc(75% - 10px) !important; /* Show 1.5 slides */
+      width: calc(77% - 10px) !important; /* Show 1.5 slides */
     }
   }
   
