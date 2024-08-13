@@ -17,17 +17,17 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --primaryColor: rgb(66, 174, 174);
-  --secondaryColor: rgb(130, 220, 225);
+  --secondaryColor: rgb(25, 118, 123);
   --secondShadow:  rgb(190, 185, 185);
-  --backColor: rgb(61, 177, 219);
+  --backColor: rgb(83, 195, 236);
   --first-color-dark: rgb(46, 103, 103);
-  --second-color-dark: rgb(114, 71, 186);
+  --second-color-dark: rgb(5, 82, 110);
   --whiteColor: rgb(255, 255, 255);
   --textColor: rgb(0, 0, 0);
   --shadow-text: 0 2px 4px var(--secondShadow);
-  --shadow-img: drop-shadow(0 12px 24px rgba(70, 70, 70, 0.4));
+  --shadow-img: drop-shadow(0 12px 24px rgba(31, 28, 28, 0.8));
   --shadow-circle: 0 12px 24px rgba(0, 0, 0, 0.4);
-  --shadow-button: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  --shadow-button: 0 -4px 8px rgba(0, 0, 0, 0.4);
   --shadow-card: 0 -8rem 24px rgba(0, 0, 0, 0.3);
   --shadow-text: 0 2px 4px var(--first-color-dark);
 }

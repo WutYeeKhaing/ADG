@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .section_title ,.seller_des{
     margin-top: 30px;
 }
@@ -5,7 +17,7 @@
     row-gap: 5rem;
     grid-template-columns: 100%;
     padding-bottom: 0rem;
-   
+    color: var(--whiteColor); 
   }
   
   .bestseller_data {
@@ -37,17 +49,16 @@
     width: 100%;
     height: 480px;
     padding: 0px 10px;
-    overflow: visible !important;
+    overflow: hidden;
   
   }
   
   .swiper-slide {
-    width: 280px;  /* Adjust this value to control slide width */
+    width: calc(100% - 20px) !important; /* Full width with small padding */
     height: 100%;
-    opacity: 0.5;
+    opacity: 1;
     transition: all 0.3s ease;
   }
-  
   
 .bestseller_article {
     position: relative;

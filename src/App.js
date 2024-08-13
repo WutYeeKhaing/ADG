@@ -2,6 +2,9 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import Home from './Home/Home';
 import BestSeller from './BestSeller/BestSeller';
+import Care from './Care/Care';
+import Banner from './Banner/Banner';
+import Product from './Product/Product';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('');
@@ -40,7 +43,7 @@ function App() {
     <div >
        <header className={`header ${shadow ? 'shadow' : ''}`} id="header">
         <nav className="nav-container">
-          <a href="" className="nav_logo">ADG Purified Water</a>
+          <a href="https://example.com" className="nav_logo">ADG Purified Water</a>
           <div className={`nav_menu ${menuOpen ? 'show-menu' : ''}`} id="nav-menu">
           <ul className="nav_list">
           <li>
@@ -93,13 +96,13 @@ function App() {
             <i className="ri-close-line"></i>
           </div>
          <div className='social-links-container'>
-          <a href='https://www.instragram.com/' target='_blank' className='social-link'>
+          <a href='https://www.instragram.com/' target="_blank" rel="noopener noreferrer" className='social-link'>
           <i className='ri-instagram-line'></i>
           </a>
-          <a href='https://www.twitter.com/' target='_blank' className='social-link'>
+          <a href='https://www.twitter.com/' target="_blank" rel="noopener noreferrer" className='social-link'>
           <i className='ri-twitter-x-line'></i>
           </a>
-          <a href='https://www.facebook.com/' target='_blank' className='social-link'>
+          <a href='https://www.facebook.com/' target="_blank" rel="noopener noreferrer" className='social-link'>
           <i className='ri-facebook-circle-line'></i>
           </a>
          </div>
@@ -118,13 +121,15 @@ function App() {
         <section  className='best-seller section' id="best-seller">
           <BestSeller/>
         </section>
-        <section id="care">
-          <h2>Care Section</h2>
-          <p>Content for the care section...</p>
+        <section className='care section' id="care">
+          <Care/>
+          
         </section>
-        <section id="products">
-          <h2>Products Section</h2>
-          <p>Content for the products section...</p>
+        
+          <Banner  className='banner' />
+        
+        <section className='product section' id="products">
+          <Product/>
         </section>
         <section id="contact">
           <h2>Contact Section</h2>

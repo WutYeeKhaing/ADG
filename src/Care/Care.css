@@ -1,0 +1,28 @@
+.care{
+    background: var(--first-color-dark);
+    color: var(--whiteColor); 
+}
+.care_container{
+    row-gap: 3rem;
+    padding-block: 1rem 2rem;
+    
+}
+.care_list{
+    display: grid;
+    row-gap: 1.25rem;
+}
+.care_item{
+    display: flex;
+    column-gap: .75rem;
+    align-items: center;
+   
+}
+.care_item i{
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+}
+.care_img{
+    width: 320px;
+    filter: var(--shadow-img);
+    justify-self: center;
+}

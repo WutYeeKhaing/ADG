@@ -14,8 +14,8 @@ const BestSeller = () => {
         <p className="seller_des">
           Our best-selling products are customer favorites for a reason. They deliver unmatched purity and taste, ensuring that every sip is as refreshing as the first. See why so many trust ADG Purified Water for their daily hydration needs.
         </p>
-        <img src={coffee} alt='image' className='bestseller1_1' />
-        <img src={coffee} alt='image' className='bestseller1_2' />
+        <img src={coffee} alt='seller' className='bestseller1_1' />
+        <img src={coffee} alt='seller' className='bestseller1_2' />
       </div>
 
       <Swiper
@@ -30,23 +30,23 @@ const BestSeller = () => {
       
         <SwiperSlide className="bestseller_article swiper-slide">
          
-            <img src={coffee} alt='image' className='bestseller-1' />
-            <img src={coffee} alt='image' className='bestseller-2' />
-            <img src={coffee} alt='image' className='bestseller-3' />
+            <img src={coffee} alt='seller1' className='bestseller-1' />
+            <img src={coffee} alt='seller2' className='bestseller-2' />
+            <img src={coffee} alt='seller3' className='bestseller-3' />
         
         </SwiperSlide>
         <SwiperSlide className="bestseller_article swiper-slide">
           
-            <img src={coffee} alt='image' className='bestseller-1' />
-            <img src={coffee} alt='image' className='bestseller-2' />
-            <img src={coffee} alt='image' className='bestseller-3' />
+            <img src={coffee} alt='seller1' className='bestseller-1' />
+            <img src={coffee} alt='seller2' className='bestseller-2' />
+            <img src={coffee} alt='seller3' className='bestseller-3' />
          
         </SwiperSlide>
         <SwiperSlide className="bestseller_article swiper-slide">
          
-            <img src={coffee} alt='image' className='bestseller-1' />
-            <img src={coffee} alt='image' className='bestseller-2' />
-            <img src={coffee} alt='image' className='bestseller-3' />
+            <img src={coffee} alt='seller1' className='bestseller-1' />
+            <img src={coffee} alt='seller2' className='bestseller-2' />
+            <img src={coffee} alt='seller3' className='bestseller-3' />
         
         </SwiperSlide>
        
