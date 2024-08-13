@@ -80,7 +80,7 @@ img{
   gap: 1.5rem;
 }
 .section{
-padding-block: 5rem 1rem;
+  padding-block: 5rem 0rem;
 }
 
 .section_title {
@@ -90,8 +90,8 @@ padding-block: 5rem 1rem;
   text-align: center;
   text-shadow: 1px 1px 2px grey;
   color: var(--whiteColor);
-    margin-bottom: 1.5rem;
-    font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .main{
@@ -181,11 +181,94 @@ padding-block: 5rem 1rem;
   color: rgb(120, 92, 147); /* Change to your desired active color */
   font-weight: var(--font-semi-bold); /* Optional: Make the active link bold */
 }
+.footer {
+  padding-block: 3rem 2rem;
+  background-color: var(--first-color-dark);
+}
 
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
 
+.footer_logo {
+  color: var(--whiteColor);
+  font: var(--h1-font-size) var(--second-font);
+  text-shadow: var(--shadow-text);
+  text-align: center;
+}
 
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
 
-@media screen and (max-width: 1150px) {
+.footer_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer_copy {
+  text-align: center;
+  width: 100%;
+}
+
+.footer_link {
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+
+.footer_link:hover {
+  color: var(--textColor);
+}
+
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsl(169, 28%, 35%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(169, 28%, 25%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(169, 28%, 15%);
+}
+
+@media screen and (min-width: 768px) {
+  .footer_container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer_content {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .footer_links {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer_container {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 980px) {
   .nav_container {
     flex-direction: column; /* Stack items vertically */
     padding: 0; /* Adjust padding */
@@ -262,8 +345,7 @@ padding-block: 5rem 1rem;
     color: rgb(197, 156, 236);
   }
   section{
-
-      padding: 60px 8px;
+      padding: 60px 3px;
 
   }
 }

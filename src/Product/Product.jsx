@@ -7,7 +7,7 @@ const Product = () => {
     return (
         <div className="products_section">
             <h2 className='section_title'>
-                All Products <br /> in One Place
+               Check Our All Products <br /> 
             </h2>
             <div className='products_container container'>
                 <div className='products_content grid'>

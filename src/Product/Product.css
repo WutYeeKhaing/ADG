@@ -6,6 +6,8 @@
 
 .products_section {
     padding: -4rem 0;
+    color: var(--whiteColor);
+    width: 100%;
 }
 
 
@@ -14,6 +16,7 @@
     position: relative;
     color: var(--whiteColor);
     margin-top: 2.5rem;
+   
 }
 
 .products_content {
@@ -63,20 +66,17 @@
 }
 
 .products_subtitle {
-    font-size: 0.9rem;
     color: var(--whiteColor);
 }
 
 .product_title {
     font: var(--font-regular) var(--h2-font-size) var(--second-font);
-   
     color: var(--whiteColor);
 }
 
 .product_price {
     font-family: var(--second-font);
     color: var(--whiteColor);
-    font-size: 1rem;
 }
 
 .product_button {
@@ -88,7 +88,7 @@
     border: none;
     background-color: var(--backColor);
     padding: 5px 8px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
