@@ -20,7 +20,7 @@
   --secondaryColor: rgb(25, 118, 123);
   --secondShadow:  rgb(190, 185, 185);
   --backColor: rgb(83, 195, 236);
-  --first-color-dark: rgb(46, 103, 103);
+  --first-color-dark: rgb(55, 110, 110);
   --second-color-dark: rgb(5, 82, 110);
   --whiteColor: rgb(255, 255, 255);
   --textColor: rgb(0, 0, 0);
@@ -89,6 +89,9 @@ padding-block: 5rem 1rem;
   font-weight: var(--font-regular); /* Specifies the font weight */
   text-align: center;
   text-shadow: 1px 1px 2px grey;
+  color: var(--whiteColor);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .main{

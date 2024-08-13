@@ -118,16 +118,16 @@ function App() {
         <section className='home section' id="home">
         <Home/>
         </section>
-        <section  className='best-seller section' id="best-seller">
-          <BestSeller/>
+        <section className='best-seller section' id="best-seller">
+          <BestSeller />
         </section>
         <section className='care section' id="care">
           <Care/>
           
         </section>
-        
-          <Banner  className='banner' />
-        
+        <div className='banner'>
+          <Banner   />
+          </div>
         <section className='product section' id="products">
           <Product/>
         </section>

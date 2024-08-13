@@ -11,7 +11,7 @@ body {
 }
 
 .section_title ,.seller_des{
-    margin-top: 30px;
+    margin-top: 0px;
 }
 .bestseller_container {
     row-gap: 5rem;
