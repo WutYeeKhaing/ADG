@@ -1,0 +1,27 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    background-color: var(--backColor);
+    color: var(--textColor);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    display: none; /* Hide initially */
+    z-index: var(--z-tooltip);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: bottom 0.4s, transform 0.4s;
+}
+
+.scroll-to-top.visible {
+    display: flex; /* Show when visible */
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-0.5rem);
+}

@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './Product.css'
+
 import coffee from '../Assets/coffee.png'
-import Liter from '../Assets/20.jpg'
 
 const Product = () => {
     return (
         <div className="products_section">
-            <h2 className='section_title'>
-               Check Our All Products <br /> 
+            <h2 className='section_title' data-aos="fade-up">
+                Check Our All Products <br />
             </h2>
             <div className='products_container container'>
                 <div className='products_content grid'>
-                    <article className='products_card'>
+                    <article className='products_card' data-aos="fade-right" data-aos-delay="200">
                         <img src={coffee} alt='500ml Bottle' className='product_img' loading="lazy" />
                         <span className='products_subtitle'>Convenient Travel Size</span>
                         <h2 className='product_title'>500ml</h2>
@@ -21,7 +21,7 @@ const Product = () => {
                         </button>
                     </article>
 
-                    <article className='products_card'>
+                    <article className='products_card' data-aos="fade-left" data-aos-delay="300">
                         <img src={coffee} alt='1 Liter Bottle' className='product_img' loading="lazy" />
                         <span className='products_subtitle'>Pure Water for On-the-Go</span>
                         <h2 className='product_title'>1 Liter</h2>
@@ -31,7 +31,7 @@ const Product = () => {
                         </button>
                     </article>
 
-                    <article className='products_card'>
+                    <article className='products_card' data-aos="fade-right" data-aos-delay="400">
                         <img src={coffee} alt='5 Liter Bottle' className='product_img' loading="lazy" />
                         <span className='products_subtitle'>Perfect for Office And Kitchen</span>
                         <h2 className='product_title'>5 Liters</h2>
@@ -41,7 +41,7 @@ const Product = () => {
                         </button>
                     </article>
 
-                    <article className='products_card'>
+                    <article className='products_card' data-aos="fade-left" data-aos-delay="500">
                         <img src={coffee} alt='10 Liter Bottle' className='product_img' loading="lazy" />
                         <span className='products_subtitle'>Stay Hydrated at Home</span>
                         <h2 className='product_title'>10 Liters</h2>
@@ -51,7 +51,7 @@ const Product = () => {
                         </button>
                     </article>
 
-                    <article className='products_card'>
+                    <article className='products_card' data-aos="fade-right" data-aos-delay="600">
                         <img src={coffee} alt='20 Liter Bottle' className='product_img' loading="lazy" />
                         <span className='products_subtitle'>Family Size Or Business Use</span>
                         <h2 className='product_title'>20 Liters</h2>
@@ -61,11 +61,10 @@ const Product = () => {
                         </button>
                     </article>
                 </div>
-                <img src={coffee} alt='product' className='products_crab' />
-                <img src={coffee} alt='product' className='products_1' />
-                <img src={coffee} alt='product' className='products_2' />
+                <img src={coffee} alt='product' className='products_crab' data-aos="fade-left" data-aos-delay="700" />
+                <img src={coffee} alt='product' className='products_1' data-aos="fade-right" data-aos-delay="800" />
+                <img src={coffee} alt='product' className='products_2' data-aos="fade-up" data-aos-delay="900" />
             </div>
-
         </div>
     )
 }

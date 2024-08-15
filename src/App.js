@@ -1,16 +1,26 @@
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import React, { useState, useEffect } from 'react';
 import Home from './Home/Home';
 import BestSeller from './BestSeller/BestSeller';
 import Care from './Care/Care';
 import Banner from './Banner/Banner';
 import Product from './Product/Product';
 import Contact from './Contact/Contact';
-
+import ScrollToTop from './ScrollToTop/ScrollToTop';
+import Layout from './Layout';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('');
   const [shadow, setShadow] = useState(false);
+
+  const sections = useRef({
+    home: null,
+    bestseller: null,
+    care: null,
+    products: null,
+    contact: null,
+  });
+
   const handleLinkClick = (section) => {
     setActiveLink(section); // Set the active link
     document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
@@ -23,9 +33,11 @@ function App() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
   const handleScroll = () => {
     if (window.scrollY >= 50) {
       setShadow(true);
@@ -33,6 +45,7 @@ function App() {
       setShadow(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -40,9 +53,40 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Adjust this value to determine when the section is considered visible
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveLink(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    Object.keys(sections.current).forEach((key) => {
+      const section = document.getElementById(key);
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      if (observer) {
+        Object.keys(sections.current).forEach((key) => {
+          const section = document.getElementById(key);
+          if (section) observer.unobserve(section);
+        });
+      }
+    };
+  }, []);
 
   return (
-    <div >
+    <div>
       <header className={`header ${shadow ? 'shadow' : ''}`} id="header">
         <nav className="nav-container">
           <a href="https://example.com" className="nav_logo">ADG Purified Water</a>
@@ -59,11 +103,11 @@ function App() {
               </li>
               <li>
                 <a
-                  href="#best-seller"
-                  className={`nav_link ${activeLink === 'best-seller' ? 'active' : ''}`}
-                  onClick={() => handleLinkClick('best-seller')}
+                  href="#bestseller"
+                  className={`nav_link ${activeLink === 'bestseller' ? 'active' : ''}`}
+                  onClick={() => handleLinkClick('bestseller')}
                 >
-                  Best Seller
+                  BestSeller
                 </a>
               </li>
               <li>
@@ -98,7 +142,7 @@ function App() {
               <i className="ri-close-line"></i>
             </div>
             <div className='social-links-container'>
-              <a href='https://www.instragram.com/' target="_blank" rel="noopener noreferrer" className='social-link'>
+              <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer" className='social-link'>
                 <i className='ri-instagram-line'></i>
               </a>
               <a href='https://www.twitter.com/' target="_blank" rel="noopener noreferrer" className='social-link'>
@@ -112,31 +156,30 @@ function App() {
           <div className="nav_toggle" id='nav_toggle' onClick={toggleMenu}>
             <i className='ri-apps-2-line'></i>
           </div>
-
-
         </nav>
       </header>
+      <Layout>
       <main>
-        <section className='home section' id="home">
+        <section className='home section' id="home" ref={(el) => (sections.current.home = el)}>
           <Home />
         </section>
-        <section className='best-seller section' id="best-seller">
+        <section className='bestseller section' id="bestseller" ref={(el) => (sections.current.bestseller = el)}>
           <BestSeller />
         </section>
-        <section className='care section' id="care">
+        <section className='care section' id="care" ref={(el) => (sections.current.care = el)}>
           <Care />
-
         </section>
         <div className='banner'>
           <Banner />
         </div>
-        <section className='product section' id="products">
+        <section className='product section' id="products" ref={(el) => (sections.current.products = el)}>
           <Product />
         </section>
-        <section className=' section' id="contact">
+        <section id="contact" ref={(el) => (sections.current.contact = el)}>
           <Contact />
         </section>
       </main>
+      </Layout>
       <footer className='footer'>
         <div className='footer_container'>
           <a href='#' className='footer_logo'>ADG Purified Water</a>
@@ -151,6 +194,7 @@ function App() {
           </div>
         </div>
       </footer>
+      <ScrollToTop />
     </div>
   );
 }

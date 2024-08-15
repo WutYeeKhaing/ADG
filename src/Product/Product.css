@@ -22,7 +22,7 @@
 .products_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 1.5rem;
+    gap: 4rem 1.5rem;
 }
 
 .products_card {
@@ -110,7 +110,7 @@
 .products_2{
   position: absolute;
   width: 40px;
-  opacity: .5;
+  opacity: .5 !important;
 }
 .products_crab{
     top: -2.5rem;
@@ -138,6 +138,12 @@
 
 @media (min-width: 1024px) {
     .products_content {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 340px) {
+    .products_content {
+        grid-template-columns: 160px;
+        justify-content: center;
     }
 }

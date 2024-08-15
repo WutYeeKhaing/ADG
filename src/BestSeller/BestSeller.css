@@ -16,7 +16,7 @@ body {
 .bestseller_container {
     row-gap: 5rem;
     grid-template-columns: 100%;
-    padding-bottom: 0rem;
+    margin-bottom: -4rem;
     color: var(--whiteColor); 
   }
   
@@ -29,7 +29,7 @@ body {
   .bestseller1_1, .bestseller1_2 {
     width: 40px;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.5 !important;
   }
   
   .bestseller1_1 {
@@ -94,12 +94,12 @@ body {
   
   .bestseller-2 {
     top: 0rem;
-    right: -0.5rem;
+    right: 1rem;
     transform: rotate(-15deg);
   }
   .bestseller-3{
     transform: rotate(15deg);
-    top: 8.5rem;
+    top: 10.5rem;
   }
   .swiper-slide-active {
     opacity: 1;
@@ -139,31 +139,115 @@ body {
   }
   
   /* Large screens */
-  @media (max-width: 1200px) {
+  @media (max-width: 1151px) {
     .swiper-slide {
-      width: calc(33.33% - 15px) !important; /* Still 3 slides, slightly smaller gap */
+      width: calc(50% - 10px) !important; /* Still 3 slides, slightly smaller gap */
+    }
+    .bestseller_container{
+      margin-bottom: -6rem;
+    }
+    .bestseller-2,.bestseller-3{
+      width: 80px;
+    }
+    .bestseller-2 {
+      top: 1rem;
+      right: 1rem;
+      transform: rotate(-15deg);
+    }
+    .bestseller-3{
+      top: 14rem;
     }
   }
   
   /* Medium screens */
   @media (max-width: 992px) {
     .swiper-slide {
-      width: calc(50% - 15px) !important; /* Show 2 slides */
+      width: calc(47% - 15px) !important; /* Show 2 slides */
+    }
+    .bestseller_container{
+      margin-bottom: -5rem;
     }
   }
   
   /* Small screens */
   @media (max-width: 768px) {
     .swiper-slide {
-      width: calc(77% - 10px) !important; /* Show 1.5 slides */
+      width: calc(47.5% - 20px) !important; /* Show 1.5 slides */
+    }
+    .bestseller-3{
+      top: 10rem;
+    }
+    .bestseller-2,.bestseller-3{
+      width: 70px;
+    }
+    .bestseller_container{
+      margin-bottom: -9rem;
     }
   }
-  
-  /* Extra small screens */
   @media (max-width: 576px) {
     .swiper-slide {
-      width: calc(80% - 20px) !important; /* Show 1 slide */
+      width: calc(45% - 5px) !important; /* Show 1 slide */
     }
+    .bestseller-3{
+      top: 8rem;
+    }
+    .bestseller-2,.bestseller-3{
+      width: 50px;
+    }
+    .bestseller_container{
+      margin-bottom: -12rem;
+    }
+  }
+  @media (max-width: 520px) {
+    .swiper-slide {
+      width: calc(55% - 5px) !important; /* Show 1 slide */
+    }
+    .bestseller-3{
+      top: 8rem;
+    }
+    .bestseller-2,.bestseller-3{
+      width: 50px;
+    }
+    .bestseller_container{
+      margin-bottom: -12rem;
+    }
+  }
+  /* Extra small screens */
+  @media (max-width: 340px) {
+    .swiper-slide {
+      width: calc(80% - 0px) !important; /* Show 1 slide */
+    }
+    .bestseller-2,.bestseller-3{
+      width: 55px;
+    }
+    .bestseller-3{
+      top: 8rem;
+    }
+    .bestseller-2 {
+      top: -1rem;
+      right: .5rem;
+      transform: rotate(-15deg);
+    }
+    .bestseller_container{
+      margin-bottom: -14rem;
+    }
+   
+  }
+  @media (max-width: 260px) {
+    .swiper-slide {
+      width: calc(85% - 20px) !important; /* Show 1 slide */
+    }
+    .bestseller-2,.bestseller-3{
+      width: 40px;
+    }
+    .bestseller-3{
+      top: 6rem;
+    }
+    .bestseller_container{
+      margin-bottom: -15rem;
+    }
+   
+   
   }
   
   /* Adjust active slide scale for different screen sizes */
@@ -193,4 +277,22 @@ body {
         padding: 1px;
      }
    
+  }
+  @media screen and (min-width: 1150px){
+   .bestseller1_1,
+   .bestseller1_2{
+     width: 80px;
+    }
+    .bestseller-2,.bestseller-3{
+      width: 110px;
+    }
+    .bestseller-3{
+      top: 15rem;
+    }
+    .swiper-slide {
+      width: calc(43% - 15px) !important; /* Still 3 slides, slightly smaller gap */
+    }
+    .bestseller_container{
+      margin-bottom: -3rem;
+    }
   }

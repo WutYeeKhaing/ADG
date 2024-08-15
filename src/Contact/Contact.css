@@ -1,9 +1,10 @@
 .contact{
     width: 100%;
- 
+    margin-top: 0rem;
 }
 .contact_title{
-    margin-top: 3rem;
+    margin-top: 0rem;
+    
 }
 .contact_container {
     padding: 2rem 0rem;
@@ -41,9 +42,11 @@
     
 }
 
-.contact_card:hover {
+.contact_card:hover,
+.contact_card:active {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: var(--first-color-dark); /* Change background on hover/touch */
 }
 
 .contact_card h3 {
@@ -76,14 +79,34 @@
     transition: color 0.3s ease;
 }
 
-.social_links a:hover {
+.social_links a:hover,
+.social_links a:active {
     color: var(--textColor);
 }
-
 /* Adjusting for smaller screens */
 @media (max-width: 768px) {
     .contact_card {
         flex: 0 0 250px; /* Slightly smaller cards on small screens */
         padding: 1rem;
     }
+    .contact_title{
+        margin-top: -5rem;
+        margin-bottom: 1rem;
+    }
+    .contact {
+        margin-top: 5rem; /* Increase top margin for small screens */
+        padding: 10px;
+    }
 }
+
+@media (max-width: 420px){
+    .contact {
+        margin-top: 0rem; /* Increase top margin for small screens */
+    }
+}
+@media (max-width: 760px){
+    .contact {
+        margin-top: 5rem; /* Increase top margin for small screens */
+    }
+}
+

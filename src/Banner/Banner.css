@@ -1,49 +1,68 @@
-.banner{
-    padding-top: 2rem;
-    
+.banner {
+    padding-top: 3rem;
 }
+
 .banner_container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 1.5rem;
-    background-color: var(--backColor); /* Light background color for the banner */
-  }
-  
-  .banner_list {
+    background-color: var(--backColor);
+}
+
+.banner_list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center align items */
+    flex-wrap: wrap;
+    justify-content: center;
 }
-  
-  .banner_item {
+
+.banner_item {
     display: flex;
     text-align: center;
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
-    font-size: 16px; /* Adjust font size as needed */
-    
-  }
-  
-  .banner_item i {
+    font-size: 16px;
+}
+
+.banner_item i {
     display: block;
     margin-bottom: 0rem;
-    font-size: 24px; /* Adjust icon size as needed */
-    margin-right: 10px; /* Space between icon and text */
+    font-size: 24px;
+    margin-right: 10px;
     color: var(--secondaryColor);
-  }
-  
-  .banner_item span {
+}
+
+.banner_item span {
     display: block;
-    font-weight: bold; /* Optional: make the text bold */
-  }
-  @media (max-width: 600px) {
-    .banner{
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .banner {
         margin: 0px -10px;
         overflow: hidden;
+    }
+}
+
+@media (min-width: 1150px) {
+    .banner_item {
+        font-size: 20px; /* Bigger font size for text */
+    }
+
+    .banner_item i {
+        font-size: 32px; /* Bigger icon size */
+        margin-right: 15px; /* Increased space between icon and text */
+    }
+
+    .banner_container {
+        padding: 1.5rem 2rem; /* More padding for larger screens */
+    }
+
+    .banner_item {
+        padding: 1.5rem; /* More padding for each item */
     }
 }
