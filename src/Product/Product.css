@@ -1,7 +1,15 @@
 @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .products_section {
@@ -16,22 +24,22 @@
     position: relative;
     color: var(--whiteColor);
     margin-top: 2.5rem;
-   
+
 }
 
 .products_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem 1.5rem;
+    gap: 5rem 1.5rem;
 }
 
 .products_card {
     position: relative;
     background-color: var(--first-color-dark);
-    padding: 5rem 1rem 1.25rem;
+    padding: 2rem 1rem 1.25rem;
     border-radius: 1rem;
     box-shadow: 0 0px 1px rgba(167, 167, 167, 0.2),
-                inset 0 -4px 10px rgba(0, 0, 0, 0.2);
+        inset 0 -4px 10px rgba(0, 0, 0, 0.2);
     z-index: 10;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
@@ -41,37 +49,50 @@
     text-align: left;
     height: 195px;
     cursor: pointer;
+
 }
 
 
 
 .product_img {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    width: 95px;
-    transform: translate(-50%, -50%); /* Center the image */
+    top: -10%;
+    left: 35%;
+    width: 100%;
+    /* Fit the width of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 200px;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    /* Center the image */
     filter: var(--shadow-img);
     transition: transform 0.3s ease;
-}
-.products_card:hover .product_img {
-    transform: translate(-50%, -50%) scale(1.1); /* Center and scale on hover */
+    transform: rotate(0deg);
 }
 
-.products_subtitle,
+.products_card:hover .product_img {
+    transform: translate(0%, -10%) scale(1.1);
+    /* Center and scale on hover */
+}
+
+
 .product_title,
 .product_price {
-    margin: 0rem 0;
+    margin: .5rem 0;
     width: 100%;
+
 }
 
 .products_subtitle {
     color: var(--whiteColor);
+    width: 58%;
 }
 
 .product_title {
     font: var(--font-regular) var(--h2-font-size) var(--second-font);
     color: var(--whiteColor);
+
 }
 
 .product_price {
@@ -87,7 +108,7 @@
     outline: none;
     border: none;
     background-color: var(--backColor);
-    padding: 5px 8px;
+    padding: 5px;
     font-size: 1rem;
     display: inline-flex;
     justify-content: center;
@@ -105,26 +126,30 @@
 .product_button i {
     transition: transform 0.3s ease;
 }
+
 .products_crab,
 .products_1,
-.products_2{
-  position: absolute;
-  width: 40px;
-  opacity: .5 !important;
+.products_2 {
+    position: absolute;
+    width: 40px;
+    opacity: .5 !important;
 }
-.products_crab{
+
+.products_crab {
     top: -2.5rem;
     left: 0;
     rotate: 30deg;
 }
-.products_1{
+
+.products_1 {
     top: 17rem;
     right: -1.5rem;
     rotate: -15deg;
 }
-.products_2{
-   left: 2rem;
-   right: 0;
+
+.products_2 {
+    left: 2rem;
+    right: 0;
     margin: 0 auto;
     bottom: 3rem;
     rotate: 15deg;
@@ -134,16 +159,64 @@
     .products_content {
         grid-template-columns: repeat(3, 1fr);
     }
+    .product_img {
+        left: 30%;
+        width: 100%;
+        max-height: 170px;
+    }
+    .products_subtitle {
+        margin: .5rem 0;
+        width: 70%;
+
+    }
 }
 
+@media (max-width:767px) {
+    .product_img {
+        left: 28%;
+        width: 100%;
+        max-height: 185px;
+    }
+}
 @media (min-width: 1024px) {
     .products_content {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .products_subtitle {
+        margin: .5rem 0;
+        width: 65%;
+
+    }
 }
+
 @media (max-width: 340px) {
     .products_content {
         grid-template-columns: 160px;
         justify-content: center;
     }
+    .product_img {
+        left: 30%;
+        width: 100%;
+        max-height: 150px;
+    }
+
+}
+@media (max-width: 455px) {
+    .products_content {
+        grid-template-columns: 260px;
+        justify-content: center;
+        gap: 2.5rem 1.5rem;
+    }
+    .product_img {
+        left: 32%;
+        width: 100%;
+        max-height: 170px;
+    }
+    .products_subtitle {
+        margin: .5rem 0;
+        width: 75%;
+
+    }
+
 }

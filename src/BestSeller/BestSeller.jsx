@@ -1,5 +1,10 @@
 import React from 'react';
-import coffee from '../Assets/coffee.png';
+import water from '../Assets/water.png'
+import water1 from '../Assets/bottle.png'
+import water2 from '../Assets/back.png'
+import water3 from '../Assets/5liter.png'
+import water4 from '../Assets/waterdrop.png'
+import water5 from '../Assets/iceleaf.png'
 import './BestSeller.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -14,8 +19,8 @@ const BestSeller = () => {
         <p className="seller_des" data-aos="fade-up" data-aos-delay="200">
           Our best-selling products are customer favorites for a reason. They deliver unmatched purity and taste, ensuring that every sip is as refreshing as the first. See why so many trust ADG Purified Water for their daily hydration needs.
         </p>
-        <img src={coffee} alt='seller' className='bestseller1_1' />
-        <img src={coffee} alt='seller' className='bestseller1_2' />
+        <img src={water} alt='seller' className='bestseller1_1' />
+        <img src={water} alt='seller' className='bestseller1_2' />
       </div>
 
       <Swiper
@@ -29,19 +34,22 @@ const BestSeller = () => {
         data-aos-delay="500"
       >
         <SwiperSlide className="bestseller_article swiper-slide">
-          <img src={coffee} alt='seller1' className='bestseller-1' data-aos="zoom-in" data-aos-delay="600"/>
-          <img src={coffee} alt='seller2' className='bestseller-2' />
-          <img src={coffee} alt='seller3' className='bestseller-3' />
+          <img src={water1} alt='seller1' className='bestseller-1' data-aos="zoom-in" data-aos-delay="600"/>
+          <img src={water4} alt='seller2' className='bestseller-2' />
+          <img src={water5} alt='seller3' className='bestseller-3' />
+          <img src={water4} alt='seller2' className='bestseller-3' />
         </SwiperSlide>
         <SwiperSlide className="bestseller_article swiper-slide">
-          <img src={coffee} alt='seller1' className='bestseller-1' data-aos="zoom-in" data-aos-delay="600"/>
-          <img src={coffee} alt='seller2' className='bestseller-2' />
-          <img src={coffee} alt='seller3' className='bestseller-3' />
+          <img src={water2} alt='seller1' className='bestseller-1' data-aos="zoom-in" data-aos-delay="600"/>
+          <img src={water4} alt='seller2' className='bestseller-2' />
+          <img src={water5} alt='seller3' className='bestseller-3' />
+          <img src={water4} alt='seller2' className='bestseller-3' />
         </SwiperSlide>
         <SwiperSlide className="bestseller_article swiper-slide">
-          <img src={coffee} alt='seller1' className='bestseller-1' data-aos="zoom-in" data-aos-delay="600"/>
-          <img src={coffee} alt='seller2' className='bestseller-2' />
-          <img src={coffee} alt='seller3' className='bestseller-3' />
+          <img src={water3} alt='seller1' className='bestseller-1' data-aos="zoom-in" data-aos-delay="600"/>
+          <img src={water4} alt='seller2' className='bestseller-2' />
+          <img src={water5} alt='seller3' className='bestseller-3' />
+          <img src={water4} alt='seller2' className='bestseller-3' />
         </SwiperSlide>
       </Swiper>
     </div>

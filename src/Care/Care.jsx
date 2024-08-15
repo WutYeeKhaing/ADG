@@ -1,5 +1,5 @@
 import React from 'react'
-import coffee from '../../src/Assets/coffee.png'
+import cup from '../../src/Assets/cup.png'
 import './Care.css'
 const Care = () => {
     return (
@@ -24,7 +24,7 @@ const Care = () => {
                         <p>Dedication to Quality: Our products reflect our dedication to delivering clean, pure water.</p>
                     </li>
                 </ul>
-               <img src={coffee} alt="care" className='care_img' data-aos="fade-left"  data-aos-delay="100"/>
+               <img src={cup} alt="care" className='care_img' data-aos="fade-left"  data-aos-delay="100"/>
             </div>
         </div>
     )

@@ -18,9 +18,9 @@
 }
 
 .home_image {
-    width: 40px;
+    width: 800px;
     position: absolute;
-    top: 8rem;
+    top: 10rem;
     right: 2rem;
     opacity: 0.5 !important; /* Ensures the opacity is applied */
 }
@@ -62,14 +62,14 @@
 }
 
 .home_images .home_img {
-    width: 250px;
+    width: 300px;
     rotate: 10deg;
     filter: var(--shadow-img);
     position: absolute;
 }
 
 .home_images img {
-    width: 60px;
+    width: 70px;
     filter: var(--shadow-img);
     position: absolute;
     z-index: 5; /* Adding a z-index to avoid conflicts */
@@ -82,7 +82,7 @@
 }
 
 .home_coff-1 {
-    right: -1.5rem;
+    right: -.5rem;
 }
 
 .home_coff-2 {
@@ -91,13 +91,14 @@
 }
 
 .home_coff-3 {
-    left: 2rem;
+    left: 1.5rem;
     top: 1.25rem;
 }
 
 .home_coff-4 {
     top: 1.5rem;
-    right: 4rem;
+    right: 2rem;
+    
 }
 
 .home_coff-5 {
@@ -167,11 +168,11 @@
     }
 
     .home_images .home_img {
-        width: 180px;
+        width: 200px;
     }
 
     .home_images img {
-        width: 40px;
+        width: 50px;
     }
 }
 
@@ -211,11 +212,11 @@
     }
 
     .home_images .home_img {
-        width: 400px;
+        width: 500px;
     }
 
     .home_images img {
-        width: 95px;
+        width: 120px;
     }
 
     .favorites_container {
@@ -233,9 +234,9 @@
     }
 
     .home_image {
-        width: 80px;
-        top: 7rem;
-        right: 7rem;
+        width: 1500px;
+        top: 10rem;
+        right: -5rem;
     }
 }
 

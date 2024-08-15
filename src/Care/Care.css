@@ -58,5 +58,6 @@
     .care_img {
         order: -1; /* This moves the image to the left side */
         max-width: 400px; /* You can adjust this value as needed */
+        margin-top: -6rem;
     }
 }

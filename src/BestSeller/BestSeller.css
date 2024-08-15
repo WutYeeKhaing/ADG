@@ -16,7 +16,6 @@ body {
 .bestseller_container {
     row-gap: 5rem;
     grid-template-columns: 100%;
-    margin-bottom: -4rem;
     color: var(--whiteColor); 
   }
   
@@ -27,7 +26,7 @@ body {
   }
   
   .bestseller1_1, .bestseller1_2 {
-    width: 40px;
+    width: 150px;
     position: absolute;
     opacity: 0.5 !important;
   }
@@ -39,7 +38,7 @@ body {
   }
   
   .bestseller1_2 {
-    bottom: -2rem;
+    bottom: -5rem;
     left: -0.75rem;
     transform: scaleX(-1) rotate(45deg);
   }
@@ -74,9 +73,11 @@ body {
     overflow: visible !important;
    
   }
+
+
   .bestseller-1 {
     width: 100%;
-    height: auto;
+    height: 400px; 
     max-height: 100%;
     object-fit: contain;
     transition: all 0.4s ease;
@@ -85,7 +86,7 @@ body {
   }
   
   .bestseller-2, .bestseller-3 {
-    width: 70px;
+   
     position: absolute;
     filter: var(--shadow-img);
     opacity: 0;
@@ -93,13 +94,16 @@ body {
   }
   
   .bestseller-2 {
+    width: 120px;
     top: 0rem;
-    right: 1rem;
-    transform: rotate(-15deg);
+    right: 5.5rem;
+    transform: rotate(15deg);
   }
   .bestseller-3{
+    width: 70px;
     transform: rotate(15deg);
-    top: 10.5rem;
+    top: 20.5rem;
+    right: 15.5rem;
   }
   .swiper-slide-active {
     opacity: 1;
@@ -143,20 +147,19 @@ body {
     .swiper-slide {
       width: calc(50% - 10px) !important; /* Still 3 slides, slightly smaller gap */
     }
-    .bestseller_container{
-      margin-bottom: -6rem;
-    }
-    .bestseller-2,.bestseller-3{
-      width: 80px;
+  
+    .bestseller-3{
+      top: 19.5rem;
+      right: 13rem;
     }
     .bestseller-2 {
       top: 1rem;
-      right: 1rem;
-      transform: rotate(-15deg);
+      right: 4rem;
+      width: 120px;
     }
-    .bestseller-3{
-      top: 14rem;
-    }
+   
+   
+  
   }
   
   /* Medium screens */
@@ -164,92 +167,137 @@ body {
     .swiper-slide {
       width: calc(47% - 15px) !important; /* Show 2 slides */
     }
-    .bestseller_container{
-      margin-bottom: -5rem;
-    }
+   
+  
+    
   }
   
   /* Small screens */
   @media (max-width: 768px) {
     .swiper-slide {
-      width: calc(47.5% - 20px) !important; /* Show 1.5 slides */
+      width: calc(47.5% -0px) !important; /* Show 1.5 slides */
+    }
+    .bestseller-2 {
+      top: 1rem;
+      right: 2rem;
+      width: 120px;
     }
     .bestseller-3{
-      top: 10rem;
+      top: 20.5rem;
+      right: 11rem;
     }
-    .bestseller-2,.bestseller-3{
-      width: 70px;
-    }
-    .bestseller_container{
-      margin-bottom: -9rem;
-    }
+   
+ 
   }
   @media (max-width: 576px) {
     .swiper-slide {
       width: calc(45% - 5px) !important; /* Show 1 slide */
     }
+    .bestseller-2 {
+      top: 1rem;
+      right: 0rem;
+
+    }
     .bestseller-3{
-      top: 8rem;
+      top: 19.5rem;
+      right: 8rem;
     }
-    .bestseller-2,.bestseller-3{
-      width: 50px;
-    }
-    .bestseller_container{
-      margin-bottom: -12rem;
-    }
+  
   }
   @media (max-width: 520px) {
+ 
+    .bestseller-3{
+      top: 20rem;
+      right: 6rem;
+    }
+    .bestseller-2 {
+      top: 1rem;
+      right: 1rem;
+    }
+  
+   
+   
+  }
+  @media (max-width: 490px) {
     .swiper-slide {
-      width: calc(55% - 5px) !important; /* Show 1 slide */
+      width: calc(53% - 5px) !important; /* Show 1 slide */
     }
     .bestseller-3{
-      top: 8rem;
+      top: 19.5rem;
+
     }
-    .bestseller-2,.bestseller-3{
-      width: 50px;
+    .bestseller-2 {
+      right: 1rem;
+      width: 100px;
     }
-    .bestseller_container{
-      margin-bottom: -12rem;
-    }
+  
+   
+   
   }
   /* Extra small screens */
-  @media (max-width: 340px) {
+  @media (max-width: 420px) {
     .swiper-slide {
-      width: calc(80% - 0px) !important; /* Show 1 slide */
+      width: calc(66% - 5px) !important; /* Show 1 slide */
     }
-    .bestseller-2,.bestseller-3{
-      width: 55px;
-    }
-    .bestseller-3{
-      top: 8rem;
-    }
+  
     .bestseller-2 {
       top: -1rem;
       right: .5rem;
-      transform: rotate(-15deg);
-    }
-    .bestseller_container{
-      margin-bottom: -14rem;
-    }
-   
-  }
-  @media (max-width: 260px) {
-    .swiper-slide {
-      width: calc(85% - 20px) !important; /* Show 1 slide */
-    }
-    .bestseller-2,.bestseller-3{
-      width: 40px;
+      
     }
     .bestseller-3{
-      top: 6rem;
+      top: 19.5rem;
+      right: 8rem;
     }
-    .bestseller_container{
-      margin-bottom: -15rem;
-    }
-   
+ 
    
   }
+  @media (max-width: 320px) {
+    .swiper-slide {
+      width: calc(88% - 20px) !important; /* Show 1 slide */
+    }
+  }
+  @media (max-width: 290px) {
+    .swiper-slide {
+      width: calc(75% - 0px) !important; /* Show 1 slide */
+    }
+  .bestseller-2 {
+    top: 2rem;
+    right: -1rem;
+    
+  }
+  .bestseller-3{
+    top: 19rem;
+    right: 8rem;
+    width: 60px;
+  }
+  }
+  @media (max-width: 270px) {
+   
+    .bestseller-3{
+      top: 19rem;
+      right: 5rem;
+      width: 60px;
+    }
+    }
+  @media (max-width: 235px) {
+
   
+    .bestseller-3{
+      top: 18rem;
+      right: 4rem;
+      width: 40px;
+    }
+    }
+    @media (max-width: 220px) {
+
+  
+      .bestseller-3{
+        top: 16rem;
+        right: 0rem;
+        width: 40px;
+      }
+      }
   /* Adjust active slide scale for different screen sizes */
   .swiper-slide-active {
     transform: scale(1.1);
@@ -266,33 +314,27 @@ body {
     .swiper-slide-active {
       transform: scale(1.03);
     }
+    .bestseller-3{
+      top: 19.5rem;
+      right: 8.5rem;
+    }
   }
   
-  @media (max-width: 800px) {
-    
-    .bestseller_swiper{
-      margin-top: 15px;
-    }
-    .bestseller-1{
-        padding: 1px;
-     }
-   
-  }
-  @media screen and (min-width: 1150px){
-   .bestseller1_1,
-   .bestseller1_2{
-     width: 80px;
-    }
-    .bestseller-2,.bestseller-3{
-      width: 110px;
-    }
-    .bestseller-3{
-      top: 15rem;
-    }
+
+  @media screen and (min-width: 1149px){
+ 
+
     .swiper-slide {
       width: calc(43% - 15px) !important; /* Still 3 slides, slightly smaller gap */
     }
-    .bestseller_container{
-      margin-bottom: -3rem;
+    .bestseller-3{
+      top: 20rem;
+      right: 14.5rem;
     }
+    .bestseller-2 {
+      top: 1rem;
+      right: 6rem;
+      width: 120px;
+    }
+   
   }
