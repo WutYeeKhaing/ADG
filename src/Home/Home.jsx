@@ -13,13 +13,12 @@ const Home = () => {
       <div className='home_data' data-aos="fade-right">
         <h1 className="home_title" data-aos="fade-up" data-aos-delay="300">Enjoy <br/>ADG WITH NO <br/> LIMITS</h1>
         <p className='home_description' data-aos="fade-up" data-aos-delay="500">
-          Healthy and Purified Water
-          When you are thirsty water Remember our brand ADG.
+        Experience the purity of water with our advanced RO and UV filtration systems. ADG Purified Drinking Water guarantees healthier, cleaner, and more refreshing hydration every time.
         </p>
         <img src={water} alt="seller" className="home_image" data-aos="zoom-in" data-aos-delay="700" />
         <div className='home_buttons'>
-          <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="button" data-aos="fade-right" data-aos-delay="900">Drink Now</a>
-          <a href="https://example.com"  target="_blank" rel="noopener noreferrer" className="button button_extra"  data-aos="fade-left" data-aos-delay="1100">Order Here</a>
+          <a href="#products"  rel="noopener noreferrer" className="button" data-aos="fade-right" data-aos-delay="900">View Products</a>
+          <a href="#contact"   rel="noopener noreferrer" className="button button_extra"  data-aos="fade-left" data-aos-delay="1100">Connect Us</a>
         </div>
       </div>
       <div className='home_images' data-aos="fade-left">

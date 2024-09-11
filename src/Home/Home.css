@@ -18,9 +18,9 @@
 }
 
 .home_image {
-    width: 800px;
+    width: 100px;
     position: absolute;
-    top: 10rem;
+    top: 5rem;
     right: 2rem;
     opacity: 0.5 !important; /* Ensures the opacity is applied */
 }
@@ -234,9 +234,9 @@
     }
 
     .home_image {
-        width: 1500px;
-        top: 10rem;
-        right: -5rem;
+        width: 200px;
+        top: 13rem;
+        right: -4rem;
     }
 }
 

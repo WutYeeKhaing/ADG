@@ -3,7 +3,7 @@ import './Contact.css';
 
 
 const Contact = () => {
-  
+
 
   return (
     <div className="contact">
@@ -13,18 +13,15 @@ const Contact = () => {
           {/* Main Factory */}
           <div className='contact_card' data-aos="flip-left" data-aos-delay="100">
             <h3>Main Factory</h3>
-            <p><i className='ri-map-pin-line'></i> 1234 Factory Road, Industrial City, Country</p>
-            <p><i className='ri-phone-line'></i> +1 (234) 567-8901</p>
-            <p><i className='ri-mail-line'></i> factory@example.com</p>
+            <p><i className='ri-map-pin-line'></i> 471, BM Rollway, Yangon </p>
+            <p><i className='ri-phone-line'></i> +95 444424528</p>
+            <p><i class='ri-mail-line'></i> <a href="mailto:adg146@gmail.com.com">adg146@gmail.com</a></p>
             <div className='social_links'>
-              <a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>
+              <a href='https://www.facebook.com/p/ADG-Purified-Drinking-Water-100063767334764' target='_blank' rel='noopener noreferrer'>
                 <i className='ri-facebook-line'></i>
               </a>
-              <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
-                <i className='ri-twitter-line'></i>
-              </a>
-              <a href='https://instagram.com' target='_blank' rel='noopener noreferrer'>
-                <i className='ri-instagram-line'></i>
+              <a href='https://t.me/wholesaler2' target='_blank' rel='noopener noreferrer'>
+                <i class='ri-telegram-line'></i>
               </a>
             </div>
           </div>
@@ -32,18 +29,15 @@ const Contact = () => {
           {/* Wholesaler 1 */}
           <div className='contact_card' data-aos="zoom-in-up" data-aos-delay="200">
             <h3>Wholesaler 1</h3>
-            <p><i className='ri-map-pin-line'></i> 5678 Agency Lane, Metropolis, Country</p>
-            <p><i className='ri-phone-line'></i> +1 (234) 567-8902</p>
-            <p><i className='ri-mail-line'></i> agency1@example.com</p>
-            <div className='social_links'>
-              <a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>
-                <i className='ri-facebook-line'></i>
+            <p><i className='ri-map-pin-line'></i> 156, BayintNaung Road, Yangon</p>
+            <p><i className='ri-phone-line'></i> +95 251044988</p>
+            <p><i class='ri-mail-line'></i> <a href="mailto:zawl998@gmail.com">zawl998@gmail.com</a></p>
+            <div class='social_links'>
+              <a href='https://www.facebook.com/p/ADG-Purified-Drinking-Water-100063767334764' target='_blank' rel='noopener noreferrer'>
+                <i class='ri-facebook-line'></i>
               </a>
-              <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
-                <i className='ri-twitter-line'></i>
-              </a>
-              <a href='https://instagram.com' target='_blank' rel='noopener noreferrer'>
-                <i className='ri-instagram-line'></i>
+              <a href='https://t.me/wholesaler2' target='_blank' rel='noopener noreferrer'>
+                <i class='ri-telegram-line'></i>
               </a>
             </div>
           </div>
@@ -51,18 +45,15 @@ const Contact = () => {
           {/* Wholesaler 2 */}
           <div className='contact_card' data-aos="fade-left" data-aos-delay="300">
             <h3>Wholesaler 2</h3>
-            <p><i className='ri-map-pin-line'></i> 9101 Agency Road, Cityville, Country</p>
-            <p><i className='ri-phone-line'></i> +1 (234) 567-8903</p>
-            <p><i className='ri-mail-line'></i> agency2@example.com</p>
+            <p><i className='ri-map-pin-line'></i> 335, MinyeKyawSwar Road, Yangon</p>
+            <p><i className='ri-phone-line'></i> +95 456822355</p>
+            <p><i class='ri-mail-line'></i> <a href="mailto:khinla25@gmail.com">khinla25@gmail.com</a></p>
             <div className='social_links'>
-              <a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>
+              <a href='https://www.facebook.com/p/ADG-Purified-Drinking-Water-100063767334764' target='_blank' rel='noopener noreferrer'>
                 <i className='ri-facebook-line'></i>
               </a>
-              <a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>
-                <i className='ri-twitter-line'></i>
-              </a>
-              <a href='https://instagram.com' target='_blank' rel='noopener noreferrer'>
-                <i className='ri-instagram-line'></i>
+              <a href='https://t.me/wholesaler2' target='_blank' rel='noopener noreferrer'>
+                <i class='ri-telegram-line'></i>
               </a>
             </div>
           </div>

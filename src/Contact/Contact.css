@@ -39,9 +39,13 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+  
     
 }
-
+.contact_card a{
+    text-decoration: none;
+    color: white;
+}
 .contact_card:hover,
 .contact_card:active {
     transform: translateY(-10px);

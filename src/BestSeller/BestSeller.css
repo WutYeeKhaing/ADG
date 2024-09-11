@@ -55,8 +55,9 @@ body {
   .swiper-slide {
     width: calc(100% - 20px) !important; /* Full width with small padding */
     height: 100%;
-    opacity: 1;
+    opacity: 0.7;
     transition: all 0.3s ease;
+    margin-left: 80px;
   }
   
 .bestseller_article {
@@ -67,6 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  
   }
   .swiper{
     margin-inline: initial;
@@ -146,6 +148,7 @@ body {
   @media (max-width: 1151px) {
     .swiper-slide {
       width: calc(50% - 10px) !important; /* Still 3 slides, slightly smaller gap */
+      margin-left: 15px; 
     }
   
     .bestseller-3{
@@ -166,6 +169,7 @@ body {
   @media (max-width: 992px) {
     .swiper-slide {
       width: calc(47% - 15px) !important; /* Show 2 slides */
+      margin-left: 30px; 
     }
    
   
@@ -174,9 +178,7 @@ body {
   
   /* Small screens */
   @media (max-width: 768px) {
-    .swiper-slide {
-      width: calc(47.5% -0px) !important; /* Show 1.5 slides */
-    }
+
     .bestseller-2 {
       top: 1rem;
       right: 2rem;
@@ -192,6 +194,7 @@ body {
   @media (max-width: 576px) {
     .swiper-slide {
       width: calc(45% - 5px) !important; /* Show 1 slide */
+      margin-left: 20px; 
     }
     .bestseller-2 {
       top: 1rem;
@@ -205,7 +208,10 @@ body {
   
   }
   @media (max-width: 520px) {
- 
+    .swiper-slide {
+      width: calc(45% - 5px) !important;
+      margin-left: 25px; /* Remove margin for extra small screens */
+    }
     .bestseller-3{
       top: 20rem;
       right: 6rem;
@@ -220,7 +226,8 @@ body {
   }
   @media (max-width: 490px) {
     .swiper-slide {
-      width: calc(53% - 5px) !important; /* Show 1 slide */
+      width: calc(45% - 5px) !important; /* Show 1 slide */
+      margin-left: 20px;
     }
     .bestseller-3{
       top: 19.5rem;
@@ -237,7 +244,8 @@ body {
   /* Extra small screens */
   @media (max-width: 420px) {
     .swiper-slide {
-      width: calc(66% - 5px) !important; /* Show 1 slide */
+      width: calc(55% - 20px) !important; /* Show 1 slide */
+      margin-left: 0;
     }
   
     .bestseller-2 {
@@ -246,57 +254,55 @@ body {
       
     }
     .bestseller-3{
-      top: 19.5rem;
+      top: 1.5rem;
       right: 8rem;
     }
  
    
   }
-  @media (max-width: 320px) {
+  @media (max-width: 360px) {
     .swiper-slide {
-      width: calc(88% - 20px) !important; /* Show 1 slide */
+      width: calc(56% - 20px) !important; /* Show 1 slide */
+      margin-left: 0;
+    }
+    .bestseller-2 {
+      top: 2rem;
+      right: -1rem;
+      
+    }
+    .bestseller-3{
+      top: 19rem;
+      right: 0rem;
+      width: 40px;
     }
   }
   @media (max-width: 290px) {
     .swiper-slide {
-      width: calc(75% - 0px) !important; /* Show 1 slide */
+      width: calc(50% - 0px) !important; /* Show 1 slide */
+      margin-left: 0;
+    } .bestseller-2 {
+      top: 2rem;
+      right: -1rem;
+      
     }
-  .bestseller-2 {
-    top: 2rem;
-    right: -1rem;
-    
-  }
-  .bestseller-3{
-    top: 19rem;
-    right: 8rem;
-    width: 60px;
-  }
+    .bestseller-3{
+      display: none;
+    }
+  
   }
   @media (max-width: 270px) {
    
-    .bestseller-3{
-      top: 19rem;
-      right: 5rem;
-      width: 60px;
-    }
+ 
     }
   @media (max-width: 235px) {
 
   
-    .bestseller-3{
-      top: 18rem;
-      right: 4rem;
-      width: 40px;
-    }
+    
     }
     @media (max-width: 220px) {
 
   
-      .bestseller-3{
-        top: 16rem;
-        right: 0rem;
-        width: 40px;
-      }
+     
       }
   /* Adjust active slide scale for different screen sizes */
   .swiper-slide-active {
