@@ -12,7 +12,7 @@ import 'swiper/css';
 
 const BestSeller = () => {
   return (
-    <div className='bestseller_container  grid'>
+    <div className='bestseller_container container grid'>
       <div className='bestseller_data' data-aos="fade-right">
         <h2 className='section_title' data-aos="fade-up" data-aos-delay="100">
           Explore Our <br /> Top-Selling Products

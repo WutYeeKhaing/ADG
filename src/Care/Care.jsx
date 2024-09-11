@@ -3,9 +3,9 @@ import cup from '../../src/Assets/cup.png'
 import './Care.css'
 const Care = () => {
     return (
-        <div>
+        <div className='care_section'>
             <h2 className='section_title' data-aos="fade-down">ENJOY AND TAKE <br />CARE OF YOUR HEALTH</h2>
-            <div className='care_container container grid'>
+            <div className='care_container'>
                 <ul className="care_list">
                     <li className="care_item" data-aos="fade-right"  data-aos-delay="100">
                         <i className='ri-test-tube-line'></i>

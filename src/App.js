@@ -25,7 +25,7 @@ function App() {
     setActiveLink(section); // Set the active link
     document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
 
-    if (window.innerWidth <= 1150) {
+    if (window.innerWidth <= 980) {
       setMenuOpen(false); // Close the menu on small screens
     }
   };
@@ -86,7 +86,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className='adg-con'>
       <header className={`header ${shadow ? 'shadow' : ''}`} id="header">
         <nav className="nav-container">
           <a href="https://example.com" className="nav_logo">ADG Purified Water</a>

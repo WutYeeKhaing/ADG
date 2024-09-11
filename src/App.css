@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,400;1,600&family=Titan+One&display=swap');
 
-
+.adg-con{
+  overflow-x: hidden;
+}
 :root{
   --header-height: 3.5rem;
   --body-font: "Poppins" ,sans-serif;
