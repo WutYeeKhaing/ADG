@@ -26,6 +26,7 @@ const Care = () => {
                 </ul>
                <img src={cup} alt="care" className='care_img' data-aos="fade-left"  data-aos-delay="100"/>
             </div>
+            
         </div>
     )
 }

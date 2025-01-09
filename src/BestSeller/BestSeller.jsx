@@ -1,18 +1,56 @@
-import React from 'react';
-import water from '../Assets/water.png'
-import water1 from '../Assets/bottle.png'
-import water2 from '../Assets/back.png'
-import water3 from '../Assets/5liter.png'
-import water6 from '../Assets/10L.png'
-import water4 from '../Assets/waterdrop.png'
-import water5 from '../Assets/iceleaf.png'
-import './BestSeller.css';
+import React, { useEffect, useRef } from 'react';
+import './BestSeller.css'; // Make sure to keep your existing styles
+import water from '../Assets/water.png';
+import water1 from '../Assets/bottle.png';
+import water2 from '../Assets/back.png';
+import water3 from '../Assets/5liter.png';
+import water6 from '../Assets/10L.png';
+import water4 from '../Assets/waterdrop.png';
+import water5 from '../Assets/iceleaf.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
+
 const BestSeller = () => {
+    const bubblesContainerRef = useRef(null);
+
+
+    useEffect(() => {
+        const createBubbles = () => {
+          const container = bubblesContainerRef.current;
+          if (!container) return;
+
+          const numberOfBubbles = 40; // Adjust number of bubbles
+            for (let i = 0; i < numberOfBubbles; i++) {
+            const bubble = document.createElement('div');
+            bubble.classList.add('bubble');
+
+            const size = Math.random() * 10 + 8; // Adjust bubble size
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            bubble.style.left = `${Math.random() * 100}%`; // Random horizontal position
+              const animationDelay = Math.random() * 1;
+            bubble.style.animationDelay = `${animationDelay}s`;
+              container.appendChild(bubble);
+          }
+          
+          const cleanUp = () => {
+            if (container) {
+                container.innerHTML = ''; // Clear all generated bubbles
+            }
+            };
+
+          return () => cleanUp();
+
+        };
+
+        createBubbles();
+
+    }, []);
+
   return (
     <div className='bestseller_container container grid'>
+         <div className="bubbles-container" ref={bubblesContainerRef}></div> {/* This is the container for bubbles */}
       <div className='bestseller_data' data-aos="fade-right">
         <h2 className='section_title' data-aos="fade-up" data-aos-delay="100">
           Explore Our <br /> Top-Selling Products
@@ -62,6 +100,7 @@ const BestSeller = () => {
         </SwiperSlide>
 
       </Swiper>
+      
     </div>
   );
 }
